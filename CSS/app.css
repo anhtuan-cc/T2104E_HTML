@@ -1,0 +1,10 @@
+body{
+    background-image: url("../images/la2.1.jpg");
+    background-size: 110px;
+    background-repeat: no-repeat;
+}
+hr{
+    background-color: red;
+    color: red;
+    border-bottom: 1px solid;
+}
