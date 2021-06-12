@@ -6,4 +6,5 @@ body{
 hr{
     background-color: red;
     color: red;
+    border-bottom: 1px solid;
 }
