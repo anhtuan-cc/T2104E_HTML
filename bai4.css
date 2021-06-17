@@ -63,27 +63,22 @@ a{
     width: calc(100% - 150px);
     height: 100%;
     margin-left: 120px;
-    border: 1px solid red;
 }
 .box{
     width: 30%;
     height: 25%;
     float: left;
     margin-right: 30px;
-    border: 1px solid red;
     margin-bottom: 30px;
     margin-top: 50px;
-    opacity: 0.5;
 }
-.box:hover{opacity: 1;}
+
 img{
     width: 100%;
     height: 40%;
 }
-.box .readmore{
+.readmore{
     color: black;
     float: left;
     width: 80px;
     height: 40px;
-    border: 1px solid red;
-}
