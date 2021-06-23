@@ -155,9 +155,11 @@ menu{
 .boxsearch{
     height: 150px;
     background-color: white;
+    padding: 15%;
+
 }
 .search{
-    margin-inside: 50px;
+
     height: 50%;
     width: 50%;
     border: 1px solid black;

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo Js</title>
+</head>
+<body>
+     <h1>Demo Javascript</h1>
+     <script type="text/javascript">
+         //code js viet tai day
+         var x;//khai bao bien x
+         //Kieu giu lieu:number,string,array,object
+         x = 15.14;//x la 1 number
+         console.log(x);
+         x = "xin chao";
+         console.log(x);
+         x = x + 5; //xin chao 5
+         var y = 20;
+         y = y + 5 //25
+         console.log(y);
+         /*
+         Num + num -> num
+         num + string -> string
+         str + str -> str
+          */
+         console.log("xin chao, day la lop 2104E, so hoc sinh : "+25+"hoc sinh");
+
+         if(y>20){
+             console.log("y>20");
+         }else{
+             console.log("y<20");
+         }
+         for(var i=0;i<20;i++){
+             console.log("i= "+i);//printf
+         }
+         var arr = [];//Khai bao 1 mang - ko gioi han so luong phan tu
+         arr[0] = 1001;
+         arr[1] ="xin chao";//ko rang buoc kieu du lieu cac phan tu
+         arr[2] = "12";// day la string, ko phai number
+         arr[2]+= 15; //27 -> 1215
+         console.log(arr[0]);
+         console.log(arr[2]);
+         console.log(arr);
+         arr[3]= [1,2,3,4];//ko gioi han chieu cua mang(mang 2 chieu)
+         arr[4]= ["xin chao",1,2,[1,2,3]];//Mang 3 chieu
+         var arr2 = [];
+         for (var i=0;i<20;i++){
+             // arr2[i] = i+i;
+             arr2.push( i + i);//them 1 phan tu co gia tri i+i vao mang
+         }
+         arr2.push(555);//cho pt cuoi vao danh sach
+         arr2[22] = 99;
+         arr2.push(777);//chi muc:23
+         console.log(arr2);
+
+         function tinhtong(a,b){
+             return a+b;
+         }
+
+         function binhphuong(a){
+             console.log(a*a);
+         }
+
+   //       alert("Cam tre em duoi 18t vao trang web. Chung toi ko chiiu trach nhiem ve noi dung!");
+   // var kt = confirm("Ban chac chan dong y nop bai thi???");
+   // if(kt){
+   //     alert("Chuc mung,ban da vuot qua ky thi");
+   // }
+   // else{
+   //     alert("rat tiec, vui long sang a4 DANG KY THI LAI")
+   // }
+         var s = prompt("Nhap tuoi cua ban vao day: ");// tra ve string
+         var t = parseInt(s);
+         console.log(t);
+         if(t != NaN && t<18){
+             window.location.href="https:24h.com.vn";
+         }else{
+             alert("Tiep tuc vao trang web");
+         }
+         console.log(t);
+
+
+     </script>
+
+</body>
+</html>
