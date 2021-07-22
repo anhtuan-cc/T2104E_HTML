@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo JQuery</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo js4</title>
+</head>
+<body>
+<h1 id="title">Tiêu đề bài báo</h1>
+<button type="button" onclick="hidePg();">Hide</button>
+<button type="button" onclick="showPg();">Show</button>
+<button type="button" onclick="onOff();">On-Off</button>
+<p class="pg">Raheem Sterling vừa có một màn trình diễn hết sức đặc biệt trong trận đại chiến Anh - Đức ở vòng 1/8 EURO 2020. Nếu cú đá của Thomas Muller đi vào khung thành, có thể Sterling đang từ vị thế người hùng lại trở thành tội đồ của "Tam sư".</p>
+<p class="pg">Raheem Sterling vừa có một màn trình diễn hết sức đặc biệt trong trận đại chiến Anh - Đức ở vòng 1/8 EURO 2020. Nếu cú đá của Thomas Muller đi vào khung thành, có thể Sterling đang từ vị thế người hùng lại trở thành tội đồ của "Tam sư".</p>
+<p class="pg">Raheem Sterling vừa có một màn trình diễn hết sức đặc biệt trong trận đại chiến Anh - Đức ở vòng 1/8 EURO 2020. Nếu cú đá của Thomas Muller đi vào khung thành, có thể Sterling đang từ vị thế người hùng lại trở thành tội đồ của "Tam sư".</p>
+<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+    var t = $("#title"); //tạo ra 1 object jquery
+    t.css({
+        "color":"red",
+        "font-size":"30px"
+    });
+    t.text("Hello every body");
+    t.html("<i>Hello every body</i>");
+    // var ps = $(".pg"); <=> getElementsByTagName
+    var ps = $(".pg"); //là 1 mang object nhưng có 1 đối tượng đại diện
+    ps.css({
+        "color":"orange",
+    });
+    function hidePg(){
+        //ps.hide()
+        // ps.fadeOut(500);
+        ps.slideUp();
+    }
+    function showPg(){
+        //ps.show()
+        ps.fadeIn(500);
+        // ps.slideDown();
+    }
+    function onOff(){
+        // ps.toggle();
+        // ps.fadeToggle();
+        ps.slideToggle();
+
+    }
+</script>
+</body>
+</html>

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Demo Js</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
 </head>
 <body>
      <h1>Demo Javascript</h1>
@@ -69,16 +70,83 @@
    // else{
    //     alert("rat tiec, vui long sang a4 DANG KY THI LAI")
    // }
-         var s = prompt("Nhap tuoi cua ban vao day: ");// tra ve string
-         var t = parseInt(s);
-         console.log(t);
-         if(t != NaN && t<18){
-             window.location.href="https:24h.com.vn";
-         }else{
-             alert("Tiep tuc vao trang web");
-         }
-         console.log(t);
+   //       var s = prompt("Nhap tuoi cua ban vao day: ");// tra ve string
+   //       var t = parseInt(s);
+   //       console.log(t);
+   //       if(t != NaN && t<18){
+   //           window.location.href="https:24h.com.vn";
+   //       }else{
+   //           alert("Tiep tuc vao trang web");
+   //       }
+   //       console.log(t);
 
+
+         // thuc thi 1 lan sau 5 giay
+         // setTimeout(function (){
+         //     alert("xin chao");
+         //     },5000 //5000ms
+         // );
+
+
+         // cu sau 5s se thuc hien 1 lan (mai mai)
+         // setInterval(function (){
+         //     alert("hello");
+         //     },5000
+         // );
+
+
+         // var k = 0;
+         // var si = setInterval(function (){
+         //     alert("hello");
+         //     k++;
+         //     if(k>2){
+         //         clearInterval(si); //loai bo setInterval
+         //     }
+         // },5000);
+
+
+
+         // var count= 5;
+         // var random = Math.random()*100;
+         // random = parseInt(random); // se duoc 1 so nguyen ngau nhien tu 0 ->99
+         // var loto= setInterval(function (){
+         // var n=prompt("Nhap con so may man cua ban: ");
+         // n=parseInt(n);
+         // if(n!= NaN){
+         //     if(random == n){
+         //         alert("Chuc mung!Ban la nguoi may man");
+         //     }else{
+         //         alert("Chuc ban may may lan sau");
+         //     }
+         //     count--;
+         // }else {
+         //     alert("vui long nhap lai so")
+         // }
+         // if(count<=0){
+         //     clearInterval(loto)
+         // }
+         // },3000);
+
+         var min=1;
+         var sec=0;
+         var timer = setInterval(function (){
+             var min_txt= min>=10?min:"0"+min;//toan tu 3 ngoi
+             //tuong duong voi
+             if(sec>=10){
+                 var sec_txt=sec;
+             }else{
+                 var sec_txt="0"+sec;
+             }
+             console.log(min_txt+":"+sec_txt);
+             sec--;
+             if(sec<0){
+                 min--;
+                 sec=59;
+             }
+             if(min<0){
+                 clearInterval(timer);
+             }
+         },100);
 
      </script>
 
