@@ -1,0 +1,29 @@
+body{
+    background-image: url("../images/lab3.bg.png");
+    background-repeat: no-repeat;
+}
+.top{
+    background-color: aliceblue;
+    text-align: center;
+    width: 100%;
+    height: 200px;
+    float: left;
+
+}
+.left{
+    float: left;
+    width: 250px;
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-color: azure;
+    margin-top: -180px;
+    padding: 50px;
+    margin-left: 200px;
+}
+.right{
+    float: right;
+    width: 800px;
+    background-color: white;
+    padding: 35px;
+    margin-right: auto;
+}
